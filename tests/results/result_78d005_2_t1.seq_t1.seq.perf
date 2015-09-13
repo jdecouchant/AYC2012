@@ -1,0 +1,17 @@
+
+Elapsed real time                  0:00.00
+CPU-seconds spent in kernel        0.00
+CPU-seconds spent in user          0.00
+Percentage of the CPU got          0%
+Maximum resident set size          3296 Kbytes.
+Average resident set size          0 Kbytes.
+data+stack+text memory use         0 Kbytes.
+Average size unshared data area    0 Kbytes.
+Average unshared stack space       0 Kbytes.
+Average size shared text space     0 Kbytes.
+Number of major page faults        0
+Number of recoverable page faults  424
+Number of context-switch           9
+Number of waits                    61
+Number of file system inputs       0
+Number of file system outputs      8

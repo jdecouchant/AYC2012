@@ -1,0 +1,2 @@
+>dataset1_seq_ref 125
+AAAAA

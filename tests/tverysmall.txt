@@ -1,0 +1,4 @@
+>dataset1_seq_ref 3
+AC
+>dataset1_seq_1_1 143@cprob 0.5
+CCA

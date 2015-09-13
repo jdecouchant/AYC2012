@@ -1,0 +1,77 @@
+# liste des arguments a passer aux tests
+# es lignes commençant par '#' sont ignorée
+# merci de mettre une description avant chaque test
+# le fichier DOIT finir par une ligne vide
+# il ne doit PAS y avoir de ligne vide !
+#
+# test fournis par intel
+24 16 refseq.txt input.txt
+#
+# est-ce qu'avec qu'un seul thread ça reste efficace ?
+1 16 refseq.txt input.txt
+#
+#ce fichier contient "GAGA", le pgm de reference la gere bizarement
+4 2 tsmall.seq tsmall.seq
+#
+#quand on cherche une longuer de 1, c'est bizarre
+4 1 tverysmall.txt tverysmall.txt
+#
+#fichier contenant uqe des noms de sequences
+# 24 16 tvide.seq tvide.seq
+#
+#une sequence de reference de 10000 cherchant dans 500 sequence de meme taille
+#est-ce qu'on gere bien plein de sequence ?
+5 12 t1_10000.seq t50_2000.seq
+#
+#on cherche dans une grand sequence, la meme sequence
+42 16 t1_10000.seq t1_10000.seq
+#
+#on cherche dans une grand sequence, la meme sequence, mais avec une petite taille
+#la sortie est differente que juste au dessus !
+36 10 t1_10000.seq t1_10000.seq
+#
+#sequence moyenne dans sequence moyenne
+7 10 t1_1000_a.seq t1_1000.seq
+#
+#
+4 100 t1_1000.seq t1_1000_with_prefix.seq
+4 100 t1_1000_with_prefix.seq t1_1000.seq
+#
+#matrice pas carré du tout
+4 4 t1_1000.seq tsmall.seq
+4 4 tsmall.seq t1_1000.seq
+4 400 t1_1000.seq tsmall.seq
+4 400 tsmall.seq t1_1000.seq
+#
+#caractères pas beaux
+# 4 4 tcrapy_ascii.seq tcrapy_ascii.seq
+#
+#enchainement de sequence pourri
+4 5 t1_1000.seq tsequences_enchqinement.seq
+4 5 tsequences_enchqinement.seq t1_1000.seq
+4 3 tsequence_space.seq tsequence_space.seq
+#
+#multiple same results
+4 5 tTGATGATGA.seq tTGATGATGA_mult.seq
+4 9 tTGATGATGA.seq tTGATGATGA_mult.seq 
+4 9 tTGATGATGA_mult.seq tTGATGATGA.seq
+#
+#
+4 3 td_top_left.seq td_top_left.seq 
+4 3 td_top_right.seq td_top_right.seq
+#
+#tests sur les "shifts"
+5 1 diago0.seq diago0.seq
+5 1 diago1.seq diago1.seq
+5 1 diago2.seq diago2.seq
+5 2 diago2.seq diago2.seq
+5 1 diago3.seq diago3.seq
+5 1 diago4.seq diago4.seq
+5 4 diago4.seq diago4.seq
+5 1 diago5.seq diago5.seq
+5 1 diago6.seq diago6.seq
+5 1 diago7.seq diago7.seq
+#
+# un fichier avec qu'une seul entrée
+8 2 t1.seq t1.seq
+8 432 t1.seq t1.seq

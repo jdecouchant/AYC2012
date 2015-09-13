@@ -1,0 +1,6 @@
+obj/main.o: src/main.cpp src/global.h src/parsing.h src/results.h \
+ src/thread.h
+obj/parsing.o: src/parsing.cpp src/parsing.h src/global.h
+obj/results.o: src/results.cpp src/results.h src/global.h
+obj/thread.o: src/thread.cpp src/thread.h src/global.h src/results.h \
+ src/parsing.h
